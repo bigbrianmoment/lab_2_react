@@ -1,8 +1,8 @@
 function About() {
     return (
-        <section>
-            <h2>Про мене</h2>
-            <p>
+        <section className="md:col-span-2 p-6 bg-white rounded-xl shadow-md border-l-8 border-brand-900">
+            <h2 className="text-2xl font-semibold text-brand-900 mb-3">Про мене</h2>
+            <p className="leading-relaxed">
                 Фаховий молодший бакалавр інженерії програмного забезпечення
                 з практичним досвідом розробки, адміністрування серверів
                 та роботи з базами даних. Поєдную знання класичного
