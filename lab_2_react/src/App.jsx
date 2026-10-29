@@ -7,7 +7,7 @@ import Contacts from './components/Contacts';
 import Footer from './components/Footer';
 import ContactForm from './components/ContactForm';
 import { useEffect, useState } from 'react';
-import Reviews from './components/reviews';
+import Reviews from './components/Reviews';
 
 function App() {
     const [theme, setTheme] = useState('light');
@@ -28,8 +28,8 @@ function App() {
                 <Education />
                 <Skills />
                 <Experience />
+                <Reviews />
                 <Contacts />
-                
             </main>
             <Footer />
             <ContactForm />
