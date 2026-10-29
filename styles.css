@@ -9,15 +9,15 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
-    background-color: #f4f6f8;
-    color: #222;
+    background-color: var(--bg);
+    color: var(--text);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 header {
-    background-color: #0e3d08;
+    background-color: var(--header-bg);
     color: white;
     padding: 2rem;
     text-align: center;
@@ -39,8 +39,8 @@ main {
 
 section {
     flex: 1 1 calc(50% - 1rem);
-    background-color: white;
-    border: 1px solid #d0d7de;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
     border-radius: 8px;
     padding: 1.25rem;
 }
@@ -48,24 +48,24 @@ section {
 /* Селектор ID */
 #about {
     flex-basis: 100%;
-    border-left: 6px solid #0e3d08;
+    border-left: 6px solid var(--heading);
 }
 
 /* Селектор класу */
 .job {
     margin-bottom: 1rem;
     padding: 0.75rem;
-    border: 1px dashed #9aa5b1;
+    border: 1px dashed var(--border);
 }
 
 /* Псевдоклас 1 */
 .job:hover {
-    background-color: #eef3f9;
+    background-color: var(--hover-bg);
 }
 
 h2 {
     margin-bottom: 0.75rem;
-    color: #0e3d08;
+    color: var(--heading);
 }
 
 ul {
@@ -75,7 +75,7 @@ ul {
 
 /* Селектор атрибута */
 a[href^="https"] {
-    color: #0a66c2;
+    color: var(--link);
 }
 
 /* Псевдоклас 2 */
@@ -105,5 +105,61 @@ a:hover {
 }
 
 a[href^="mailto"] {
-    color: #0a66c2;
+    color: var(--link);
+}
+
+footer {
+    background-color: var(--header-bg);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal[hidden] {
+    display: none;
+}
+
+.modal-content {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 420px;
+}
+
+.modal-content input,
+.modal-content textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.75rem;
+}
+:root {
+    --bg: #f4f6f8;
+    --text: #222;
+    --card-bg: #ffffff;
+    --border: #d0d7de;
+    --header-bg: #0e3d08;
+    --heading: #0e3d08;
+    --link: #0a66c2;
+    --hover-bg: #eef3f9;
+}
+
+body.dark {
+    --bg: #12181f;
+    --text: #e6edf3;
+    --card-bg: #1b232c;
+    --border: #30363d;
+    --header-bg: #0f1d30;
+    --heading: #9ec1ea;
+    --link: #6cb2ff;
+    --hover-bg: #26313d;
 }

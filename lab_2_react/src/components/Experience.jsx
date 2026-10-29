@@ -1,10 +1,10 @@
 function Experience() {
     return (
-        <section className="md:col-span-2 p-6 bg-white rounded-xl shadow-md border border-slate-200">
-            <h2 className="text-2xl font-semibold text-brand-900 mb-4">Досвід</h2>
+        <section className="md:col-span-2 p-6 bg-white dark:bg-slate-800 rounded-xl shadow-md border border-slate-200 dark:border-slate-700">
+            <h2 className="text-2xl font-semibold text-brand-900 dark:text-emerald-200 mb-4">Досвід</h2>
 
             <div className="grid gap-4 md:grid-cols-3">
-                <article className="p-4 border-l-4 border-brand-700 bg-slate-50 rounded-r-lg hover:bg-brand-50 hover:scale-105 transition">
+                <article className="p-4 border-l-4 border-brand-700 bg-slate-50 dark:bg-slate-700 rounded-r-lg hover:bg-brand-50 dark:hover:bg-slate-600 hover:scale-105 transition">
                     <h3 className="text-lg font-semibold mb-2">Розробка сайту на WordPress</h3>
                     <p className="text-sm leading-relaxed">
                         Побудова та налаштування сайту на WordPress із темою
@@ -14,7 +14,7 @@ function Experience() {
                     </p>
                 </article>
 
-                <article className="p-4 border-l-4 border-brand-700 bg-slate-50 rounded-r-lg hover:bg-brand-50 hover:scale-105 transition">
+                <article className="p-4 border-l-4 border-brand-700 bg-slate-50 dark:bg-slate-700 rounded-r-lg hover:bg-brand-50 dark:hover:bg-slate-600 hover:scale-105 transition">
                     <h3 className="text-lg font-semibold mb-2">
                         Адміністрування хостингу та Minecraft-сервера
                     </h3>
@@ -25,7 +25,7 @@ function Experience() {
                     </p>
                 </article>
 
-                <article className="p-4 border-l-4 border-brand-700 bg-slate-50 rounded-r-lg hover:bg-brand-50 hover:scale-105 transition">
+                <article className="p-4 border-l-4 border-brand-700 bg-slate-50 dark:bg-slate-700 rounded-r-lg hover:bg-brand-50 dark:hover:bg-slate-600 hover:scale-105 transition">
                     <h3 className="text-lg font-semibold mb-2">
                         Розробка та адміністрування баз даних
                     </h3>

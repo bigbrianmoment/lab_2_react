@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Резюме – Нестеренко Олександр</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <style>
         footer {
-            background-color: #0e3d08;
+            background-color: var(--header-bg);
             color: white;
             text-align: center;
             padding: 1rem;
@@ -19,6 +20,7 @@
     <header>
         <h1 style="letter-spacing: 2px;">Нестеренко Олександр</h1>
         <p>Fullstack-розробник / System Administrator</p>
+        <button type="button" id="theme-toggle">Змінити тему</button>
     </header>
 
     <main>
@@ -83,6 +85,10 @@
                 <li>Пакет офісних програм (Word, Excel, PowerPoint)</li>
             </ul>
         </section>
+        <section id="reviews">
+            <h2>Відгуки роботодавців</h2>
+            <div id="reviews-list"></div>
+        </section>
 
         <section>
             <h2>Досвід</h2>
@@ -128,7 +134,29 @@
 
     <footer>
         <p>&copy; 2026 Нестеренко Олександр</p>
+        <ul id="system-info"></ul>
     </footer>
+<div id="modal" class="modal" hidden>
+    <div class="modal-content">
+        <button type="button" id="modal-close">Закрити</button>
+        <h2>Зворотний зв'язок</h2>
+        <form id="contact-form">
+            <label for="name">Ім'я</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Номер телефону</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message">Повідомлення</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Надіслати</button>
+            <p id="form-result" role="status" aria-live="polite"></p>
+        </form>
+    </div>
+</div>
 </body>
 </html>
