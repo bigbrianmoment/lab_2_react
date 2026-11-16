@@ -37,6 +37,16 @@ function Experience() {
                         взаємодії з базами даних (C#, Windows Forms).
                     </p>
                 </article>
+                <article className="p-4 border-l-4 border-brand-700 bg-slate-50 dark:bg-slate-700 rounded-r-lg hover:bg-brand-50 dark:hover:bg-slate-600 hover:scale-105 transition">
+                    <h3 className="text-lg font-semibold mb-2">
+                        Адміністрування власних та модерація спільнот
+                    </h3>
+                    <p className="text-sm leading-relaxed">
+                    Адміністрування власних спільнот у соціальних мережах X (Twitter), Discord, Telegram,
+                    модерація користувацької спільноти на 300 користувачів, забезпечення
+                    захисту від спаму та контакту рекламодавців з власником, вирішення інцидентів.
+                    </p>
+                </article>
             </div>
         </section>
     );

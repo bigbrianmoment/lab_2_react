@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import About from './components/About';
 import Education from './components/Education';
+import Languages from './components/Languages';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Contacts from './components/Contacts';
@@ -25,8 +26,11 @@ function App() {
             <Header theme={theme} onToggle={toggleTheme} />
             <main className="flex-1 w-full max-w-5xl mx-auto px-4 py-8 grid gap-6 md:grid-cols-2 md:items-start">
                 <About />
-                <Education />
                 <Skills />
+                <div className="grid content-start gap-6">
+                    <Education />
+                    <Languages />
+                </div>
                 <Experience />
                 <Reviews />
                 <Contacts />
